@@ -5,7 +5,6 @@ import Image from "next/image";
 
 function CustomButton({ title, containerStyles, handleClick, btnType, textStyles, rightIcon }: CustomButtonProps) {
     return (  
-        <div>
             <button
                 disabled={false}
                 type={btnType || "button"}
@@ -21,7 +20,6 @@ function CustomButton({ title, containerStyles, handleClick, btnType, textStyles
                     </div>
                 )}
             </button>
-        </div>
     );
 }
 

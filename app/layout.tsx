@@ -1,5 +1,6 @@
 import { Footer, Navbar } from '@/components'
 import './globals.css'
+import Head from 'next/head'
 
 export const metadata = {
   title: 'Car Hub',
@@ -13,6 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head><link rel="shortcut icon" href="/favicon.ico" /></Head>
       <body className={"relative"}>
         <Navbar/>
         {children}
